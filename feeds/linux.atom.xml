@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech.</title><link href="http://osdaniellee.github.io/" rel="alternate"></link><link href="http://osdaniellee.github.io/feeds/linux.atom.xml" rel="self"></link><id>http://osdaniellee.github.io/</id><updated>2016-03-12T15:31:00+08:00</updated><entry><title>Linux文件操作总结</title><link href="http://osdaniellee.github.io/articles/linux-post.html" rel="alternate"></link><updated>2016-03-12T15:31:00+08:00</updated><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-12:articles/linux-post.html</id><summary type="html">&lt;h1&gt;linux文件操作总结&lt;/h1&gt;
+&lt;p&gt;linux的文件操作非常常用，但是又容易忘记。&lt;/p&gt;
+&lt;p&gt;以C操作为例：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+    &lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+    &lt;span class="n"&gt;read&lt;/span&gt;
+    &lt;span class="n"&gt;write&lt;/span&gt;
+    &lt;span class="n"&gt;seek&lt;/span&gt;
+    &lt;span class="n"&gt;open&lt;/span&gt;
+    &lt;span class="n"&gt;close&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;以上操作常用，记下方便查询&lt;/p&gt;
+&lt;p&gt;just for test
+&lt;img alt="image" src="..\images\screenshot.png" /&gt;&lt;/p&gt;</summary><category term="Linux"></category><category term="file operation"></category></entry></feed>

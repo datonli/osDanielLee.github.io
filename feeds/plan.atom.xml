@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech.</title><link href="http://osdaniellee.github.io/" rel="alternate"></link><link href="http://osdaniellee.github.io/feeds/plan.atom.xml" rel="self"></link><id>http://osdaniellee.github.io/</id><updated>2016-03-13T16:41:00+08:00</updated><entry><title>博客宗旨和计划</title><link href="http://osdaniellee.github.io/articles/plan-post.html" rel="alternate"></link><updated>2016-03-13T16:41:00+08:00</updated><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-13:articles/plan-post.html</id><summary type="html">&lt;h2&gt;博客宗旨&lt;/h2&gt;
+&lt;p&gt;建设博客是因为在很多方面都遇到各种各样的问题，虽然都能够得以解决，
+却很快就会随着时间而遗忘。以往大都是使用类似与“有道云笔记”的工具
+进行记录和思考，并且在很多时候“有道云笔记”还承载着收集各种材料、
+知识的作用，导致其中的内容非常浩瀚庞大，以至于在需要回头参考和借鉴
+时没办法迅速找到对应的内容；同时，“有道云笔记”作为材料收集时是非常
+有效的，但是在那种工具提供的便捷性之外，却能将自我的独立思考和总结
+的念头打消掉。&lt;/p&gt;
+&lt;p&gt;博客恰巧能够承担这样一个自我思考、总结的功能，
+作为自己记录成长和进步的一个地方，成为在时间的冲刷下
+滞留下来的有价值的东西，承载着过去，希望也能够开启未来。&lt;/p&gt;
+&lt;h2&gt;近期计划&lt;/h2&gt;
+&lt;p&gt;由于最近正处于学习和工作的转换期，细细想起来需要做的事情还真不少。
+总体而言也就两点：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;记载过去的问题，进步，思绪，经验，教训；&lt;/li&gt;
+&lt;li&gt;继续前进，记录现在遇到的问题，学习上、技术上的需要记录的东西。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;关于过去的计划&lt;/h3&gt;
+&lt;p&gt;有关过去方面，主要是技术的积累方面，有以下几个方面：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Hadoop技术，包括毕设中设计的Hadoop，Spark，以及2015年暑假
+在百度实习时遇到的问题和解决等等；此外，对于Hadoop技术中了解到
+的关键点都需要以博客的形式记录下来；&lt;/li&gt;
+&lt;li&gt;PyQt和Python做PC图形界面方面知识积累和经验总结；&lt;/li&gt;
+&lt;li&gt;Unix高级编程中常用知识的总结（结合上课时写的博客进行重温）；&lt;/li&gt;
+&lt;li&gt;机器学习知识和相关数学知识的积累及总结，包括自己手写的简单
+机器学习算法实现；&lt;/li&gt;
+&lt;li&gt;其他零碎学习的知识的总结，包括Python建站（Django），包括这次
+建设博客（github pages，Pelican）等。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;关于现在和未来的计划&lt;/h3&gt;
+&lt;p&gt;现在需要做的更多是学习有关机器学习的知识以及其相关知识（工作需要），
+有关现在的计划：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;概率和统计等数学知识的重温和总结；&lt;/li&gt;
+&lt;li&gt;机器学习相关书籍（《统计学习方法》，《PRML》等）的学习以及总结。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在现在之外的，未来需要做的而目前停留在想法阶段的事有：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;使用Golang实现分布式存储和计算框架，以及机器学习算法；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;努力之~&lt;/p&gt;</summary><category term="计划，打算"></category></entry></feed>

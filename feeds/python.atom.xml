@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech.</title><link href="http://osdaniellee.github.io/" rel="alternate"></link><link href="http://osdaniellee.github.io/feeds/python.atom.xml" rel="self"></link><id>http://osdaniellee.github.io/</id><updated>2016-03-15T16:00:00+08:00</updated><entry><title>py2exe编译py3文件方法</title><link href="http://osdaniellee.github.io/articles/python-py2exe-post.html" rel="alternate"></link><updated>2016-03-15T16:00:00+08:00</updated><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-15:articles/python-py2exe-post.html</id><summary type="html">&lt;h2&gt;使用py2exe编译py3文件&lt;/h2&gt;
+&lt;p&gt;首先下载&lt;a href="https://pypi.python.org/pypi/py2exe"&gt;py2exe&lt;/a&gt;，注意要找到
+对应的版本，有对应py2的，有对应py3的。&lt;/p&gt;
+&lt;p&gt;在要编译的xx.py文件同目录下新建setup2exe.py，内容为：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;distutils.core&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;setup&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;py2exe&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
+
+&lt;span class="c1"&gt;#this allows to run it with a simple double click.&lt;/span&gt;
+&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;argv&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;py2exe&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;py2exe_options&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="s2"&gt;&amp;quot;includes&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;sip&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,],&lt;/span&gt;  &lt;span class="c1"&gt;# 如果打包文件中有PyQt代码，则这句为必须添加的&lt;/span&gt;
+        &lt;span class="c1"&gt;#&amp;quot;excludes&amp;quot;: [&amp;quot;CommuMain&amp;quot;,&amp;quot;Para&amp;quot;,&amp;quot;Translate&amp;quot;,],&lt;/span&gt;
+        &lt;span class="s2"&gt;&amp;quot;dll_excludes&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;MSVCP90.dll&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,],&lt;/span&gt;  &lt;span class="c1"&gt;# 这句必须有，不然打包后的程序运行时会报找不到MSVCP90.dll，如果打包过程中找不到这个文件，请安装相应的库&lt;/span&gt;
+        &lt;span class="s2"&gt;&amp;quot;compressed&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="s2"&gt;&amp;quot;optimize&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="s2"&gt;&amp;quot;ascii&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+        &lt;span class="s2"&gt;&amp;quot;bundle_files&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="c1"&gt;# 关于这个参数请看第三部分中的问题(2)&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+      &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;PyQt Demo&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="n"&gt;version&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;1.0&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="n"&gt;windows&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Main_UpSite.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,],&lt;/span&gt;   &lt;span class="c1"&gt;# 括号中更改为你要打包的代码文件名&lt;/span&gt;
+      &lt;span class="n"&gt;zipfile&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="n"&gt;options&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;py2exe&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;py2exe_options&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+      &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;在cmd下，执行上述文件：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;python setup2exe.py
+即可。&lt;/p&gt;
+&lt;/blockquote&gt;</summary><category term="Python，py2exe，可执行文件"></category></entry><entry><title>python读取二进制字节流的方法</title><link href="http://osdaniellee.github.io/articles/python-read-binary-bytes-post.html" rel="alternate"></link><updated>2016-03-15T15:40:00+08:00</updated><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-15:articles/python-read-binary-bytes-post.html</id><summary type="html">&lt;h2&gt;使用python读取二进制字节流文件的方法&lt;/h2&gt;
+&lt;p&gt;使用C的fwrite直接将char[]的内容写到txt文件中是一种很常见
+的写文件方式（尤其是在下位机等较为底层的应用场景），而我们
+往往使用python读取文件更多的是考虑读取文件中的内容为字符形式
+（包括字符串和数字），遇到这种一个一个char的情况就觉得非常棘手。&lt;/p&gt;
+&lt;p&gt;其实在python中read(1)就是代表一个一个char来读取的作用，例子如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;with open(&amp;quot;QQQ6.TXT&amp;quot;, &amp;quot;rb&amp;quot;) as f:
+    byte = f.read(1)
+    byteList = list()
+    while byte:
+        ob = ord(byte)
+        byteList.append(ob)
+        byte = f.read(1)
+    print(byteList)
+    print(len(byteList)/64)
+for i in range(5):
+    l = byteList[i*64:(i+1)*64]
+    print(l)
+    print(len(l))
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;此为记录~&lt;/p&gt;</summary><category term="二进制字节，Python，文件读取，fwrite"></category></entry></feed>

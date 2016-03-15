@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+        <title>py2exe编译py3文件方法</title>
+        <meta charset="utf-8" />
+        <link href="http://osdaniellee.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tech. Full Atom Feed" />
+        <link href="http://osdaniellee.github.io/feeds/python.atom.xml" type="application/atom+xml" rel="alternate" title="Tech. Categories Atom Feed" />
+
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="http://osdaniellee.github.io/theme/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="http://osdaniellee.github.io/theme/style.css" />
+        <link rel="stylesheet" type="text/css" href="http://osdaniellee.github.io/theme/pygment.css" />
+
+        <script src="http://osdaniellee.github.io/theme/js/libs/modernizr-2.6.2.min.js"></script>
+
+
+
+
+</head>
+
+<body id="index" class="home">
+
+
+    <div class="container">
+
+        <div class="row">
+
+          <header id="banner" class="body">
+                  <h1><a href="http://osdaniellee.github.io/">Tech. <strong></strong></a></h1>
+          </header><!-- /#banner -->
+
+            <div id="navigation" class="navbar row">
+              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
+             
+              <ul class="columns">
+                <li><a href="http://osdaniellee.github.io/">Home</a></li>
+
+                <li><a href="http://osdaniellee.github.io/pages/lidatong.html">lidatong's CV</a></li>
+
+              </ul>
+            </div>
+
+<section id="content" class="body">
+
+   <div class="row">
+        <div class="eleven columns">
+
+
+            <header>
+              <h2 class="entry-title">
+                <a href="http://osdaniellee.github.io/articles/python-py2exe-post.html" rel="bookmark"
+                   title="Permalink to py2exe编译py3文件方法">py2exe编译py3文件方法</a></h2>
+           
+            </header>
+            <footer class="post-info">
+              <abbr class="published" title="2016-03-15T16:00:00+08:00">
+                2016-03-15 16:00
+              </abbr>
+              <address class="vcard author">By 
+                <a class="url fn" href="http://osdaniellee.github.io/author/lidatong.html"> lidatong</a>
+              </address>
+            </footer><!-- /.post-info -->
+            <div class="entry-content">
+              <h2>使用py2exe编译py3文件</h2>
+<p>首先下载<a href="https://pypi.python.org/pypi/py2exe">py2exe</a>，注意要找到
+对应的版本，有对应py2的，有对应py3的。</p>
+<p>在要编译的xx.py文件同目录下新建setup2exe.py，内容为：</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">distutils.core</span> <span class="kn">import</span> <span class="n">setup</span>
+<span class="kn">import</span> <span class="nn">py2exe</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="c1">#this allows to run it with a simple double click.</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;py2exe&#39;</span><span class="p">)</span>
+
+<span class="n">py2exe_options</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;includes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;sip&quot;</span><span class="p">,],</span>  <span class="c1"># 如果打包文件中有PyQt代码，则这句为必须添加的</span>
+        <span class="c1">#&quot;excludes&quot;: [&quot;CommuMain&quot;,&quot;Para&quot;,&quot;Translate&quot;,],</span>
+        <span class="s2">&quot;dll_excludes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;MSVCP90.dll&quot;</span><span class="p">,],</span>  <span class="c1"># 这句必须有，不然打包后的程序运行时会报找不到MSVCP90.dll，如果打包过程中找不到这个文件，请安装相应的库</span>
+        <span class="s2">&quot;compressed&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;optimize&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="s2">&quot;ascii&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">&quot;bundle_files&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>  <span class="c1"># 关于这个参数请看第三部分中的问题(2)</span>
+        <span class="p">}</span>
+
+<span class="n">setup</span><span class="p">(</span>
+      <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;PyQt Demo&#39;</span><span class="p">,</span>
+      <span class="n">version</span> <span class="o">=</span> <span class="s1">&#39;1.0&#39;</span><span class="p">,</span>
+      <span class="n">windows</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Main_UpSite.py&#39;</span><span class="p">,],</span>   <span class="c1"># 括号中更改为你要打包的代码文件名</span>
+      <span class="n">zipfile</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
+      <span class="n">options</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;py2exe&#39;</span><span class="p">:</span> <span class="n">py2exe_options</span><span class="p">}</span>
+      <span class="p">)</span>
+</pre></div>
+
+
+<p>在cmd下，执行上述文件：</p>
+<blockquote>
+<p>python setup2exe.py
+即可。</p>
+</blockquote>
+            </div><!-- /.entry-content -->
+            <div class="comments">
+              <h3>Comments</h3>
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                var disqus_identifier = "articles/python-py2exe-post.html";
+                (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'https://osdaniellee.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+              </script>
+            </div>
+
+
+        </div><!-- /.eleven.columns -->
+
+<div class="three columns">
+
+<h4>Pages</h4>
+
+ <ul>
+      <li><a href="http://osdaniellee.github.io/pages/lidatong.html">lidatong's CV</a></li>
+  </ul>
+
+<h4>Categories</h4>
+<ul class="blank">
+		<li><a href="http://osdaniellee.github.io/category/linux/">Linux</a></li>
+		<li><a href="http://osdaniellee.github.io/category/piece/">Piece</a></li>
+		<li><a href="http://osdaniellee.github.io/category/plan/">Plan</a></li>
+		<li><a href="http://osdaniellee.github.io/category/python/">Python</a></li>
+</ul>
+
+
+<h4>Tags</h4>
+	<ul class="blank">
+</ul>
+
+
+<nav class="widget">
+  <h4>Social</h4>
+  <ul class="blank">
+    <li><a href="http://github.com/osDanielLee/osDanielLee.github.io">Github</a></li>
+  </ul>
+</nav>
+
+</div> </div><!-- /.row -->
+
+
+</section>
+
+       </div><!-- /.row -->
+    </div><!-- /.container -->
+
+
+       <div class="container.nopad bg">
+
+    
+        <footer id="credits" class="row">
+          <div class="seven columns left-center">
+
+                   <address id="about" class="vcard body">
+                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                    which takes great advantage of <a href="http://python.org">Python</a>.
+                    <br />
+                    Based on the <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
+                    </address>
+          </div>
+
+
+          <div class="seven columns">
+            <div class="row">
+              <ul class="socbtns">
+
+                <li><div class="btn primary"><a href="https://github.com/osDanielLee" target="_blank">Github</a></div></li>
+
+
+
+
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'osdaniellee';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+  <script src="http://osdaniellee.github.io/theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="http://osdaniellee.github.io/theme/js/libs/gumby.min.js"></script>
+  <script src="http://osdaniellee.github.io/theme/js/plugins.js"></script>
+</body>
+</html>
