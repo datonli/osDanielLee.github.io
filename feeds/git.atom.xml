@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech.</title><link href="http://osdaniellee.github.io/" rel="alternate"></link><link href="http://osdaniellee.github.io/feeds/git.atom.xml" rel="self"></link><id>http://osdaniellee.github.io/</id><updated>2016-03-15T19:40:00+08:00</updated><entry><title>如何用git开始github之旅</title><link href="http://osdaniellee.github.io/articles/git-github-order-post.html" rel="alternate"></link><updated>2016-03-15T19:40:00+08:00</updated><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-15:articles/git-github-order-post.html</id><summary type="html">&lt;h2&gt;下载并安装git，注册github账号&lt;/h2&gt;
+&lt;p&gt;下载安装注册都很容易，如果在安装git时不知道如何选，一路默认也是可以的。&lt;/p&gt;
+&lt;h2&gt;安装SSH key&lt;/h2&gt;
+&lt;p&gt;要使用Github，必须先在本机上生成SSH key，并且将其添加到自己github账号的SSH Keys上。产生的方法是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+然后一路回车，结束后还需要将SSH key添加到ssh-agent，方法为：
+ssh-add ~/.ssh/id_rsa
+之后就是需要将id_rsa.pub中的内容添加到github账号的SSH keys上。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;常用的git指令&lt;/h2&gt;
+&lt;p&gt;通常新建一个repository时，在一台新的电脑上，往往都需要用到的相关指令：&lt;/p&gt;
+&lt;p&gt;在github上new了一个xxx.github.io.git库之后，可以：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git init
+git add .
+git commit -m &amp;quot;test&amp;quot;
+git remote add origin git@github.com:xxx/xxx.github.io.git
+git push -u origin master
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;如果是github上本来就存在了xxx.github.io.git，并有文件，可以：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git init
+git remote add origin git@github.com:xxx/xxx.github.io.git
+git pull
+git add .
+git commit -m &amp;quot;test&amp;quot;
+git push -u origin master
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;最后一步如果不成功，比如出现错误如：
+&lt;img alt="image" src="..\images\gitpush出现rejected错误.png" /&gt;
+则使用强制push：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git push -f
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;一般都能够成功。&lt;/p&gt;</summary><category term="Github"></category><category term="git，指令"></category></entry></feed>

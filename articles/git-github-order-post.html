@@ -2,9 +2,10 @@
 <html lang="zh">
 <head>
 
-        <title>Tech. - 二进制字节，Python，文件读取，fwrite</title>
+        <title>如何用git开始github之旅</title>
         <meta charset="utf-8" />
         <link href="http://osdaniellee.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tech. Full Atom Feed" />
+        <link href="http://osdaniellee.github.io/feeds/git.atom.xml" type="application/atom+xml" rel="alternate" title="Tech. Categories Atom Feed" />
 
 
         <!-- Mobile viewport optimized: j.mp/bplateviewport -->
@@ -43,41 +44,83 @@
               </ul>
             </div>
 
-<section id="content">
-
-
+<section id="content" class="body">
 
    <div class="row">
-
-
         <div class="eleven columns">
-                 <ol id="post-list">
-                        <li><article class="hentry">
-                                <header> <h2 class="entry-title"><a href="http://osdaniellee.github.io/articles/python-read-binary-bytes-post.html" rel="bookmark" title="Permalink to python读取二进制字节流的方法">python读取二进制字节流的方法</a></h2> </header>
-                                <footer class="post-info">
-                                    <abbr class="published" title="2016-03-15T15:40:00+08:00"> 2016-03-15 15:40 </abbr>
-                                    <address class="vcard author">By 
-                                    <a class="url fn" href="http://osdaniellee.github.io/author/lidatong.html"> lidatong</a>
-                                    </address>
-                                </footer><!-- /.post-info -->
-                                <div class="entry-content"> <p>使用python读取C代码write的文件时，经常要处理来自C的fwrite直接写char[]的情况，一个一个char写进文件中，所生产的文件往往令人摸不着头脑。其实处理方法很简单，只需要调用python中的read(1)即可一个char一个char来读取。</p> </div><!-- /.entry-content -->
-
-                                <div class="medium primary btn"><a href="http://osdaniellee.github.io/articles/python-read-binary-bytes-post.html" rel="bookmark" title="Permalink to python读取二进制字节流的方法">Read more <i class="icon-arrow-right"></i></a></div>
 
 
+            <header>
+              <h2 class="entry-title">
+                <a href="http://osdaniellee.github.io/articles/git-github-order-post.html" rel="bookmark"
+                   title="Permalink to 如何用git开始github之旅">如何用git开始github之旅</a></h2>
+           
+            </header>
+            <footer class="post-info">
+              <abbr class="published" title="2016-03-15T19:40:00+08:00">
+                2016-03-15 19:40
+              </abbr>
+              <address class="vcard author">By 
+                <a class="url fn" href="http://osdaniellee.github.io/author/lidatong.html"> lidatong</a>
+              </address>
+            </footer><!-- /.post-info -->
+            <div class="entry-content">
+              <h2>下载并安装git，注册github账号</h2>
+<p>下载安装注册都很容易，如果在安装git时不知道如何选，一路默认也是可以的。</p>
+<h2>安装SSH key</h2>
+<p>要使用Github，必须先在本机上生成SSH key，并且将其添加到自己github账号的SSH Keys上。产生的方法是：</p>
+<blockquote>
+<p>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+然后一路回车，结束后还需要将SSH key添加到ssh-agent，方法为：
+ssh-add ~/.ssh/id_rsa
+之后就是需要将id_rsa.pub中的内容添加到github账号的SSH keys上。</p>
+</blockquote>
+<h2>常用的git指令</h2>
+<p>通常新建一个repository时，在一台新的电脑上，往往都需要用到的相关指令：</p>
+<p>在github上new了一个xxx.github.io.git库之后，可以：</p>
+<div class="highlight"><pre><span></span>git init
+git add .
+git commit -m &quot;test&quot;
+git remote add origin git@github.com:xxx/xxx.github.io.git
+git push -u origin master
+</pre></div>
 
-                                <div class="row tag-row">
-                                        <span>Tagged as : </span>
-                                            <a class="danger label" href="http://osdaniellee.github.io/tag/er-jin-zhi-zi-jie-pythonwen-jian-du-qu-fwrite/">二进制字节，Python，文件读取，fwrite</a>
-                                </div>
+
+<p>如果是github上本来就存在了xxx.github.io.git，并有文件，可以：</p>
+<div class="highlight"><pre><span></span>git init
+git remote add origin git@github.com:xxx/xxx.github.io.git
+git pull
+git add .
+git commit -m &quot;test&quot;
+git push -u origin master
+</pre></div>
 
 
+<p>最后一步如果不成功，比如出现错误如：
+<img alt="image" src="..\images\gitpush出现rejected错误.png" />
+则使用强制push：</p>
+<div class="highlight"><pre><span></span>git push -f
+</pre></div>
 
-                        </article></li>
-                </ol><!-- /#posts-list -->
+
+<p>一般都能够成功。</p>
+            </div><!-- /.entry-content -->
+            <div class="comments">
+              <h3>Comments</h3>
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                var disqus_identifier = "articles/git-github-order-post.html";
+                (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'https://osdaniellee.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+              </script>
+            </div>
+
 
         </div><!-- /.eleven.columns -->
-        
+
 <div class="three columns">
 
 <h4>Pages</h4>
@@ -110,10 +153,8 @@
 
 </div> </div><!-- /.row -->
 
-<p class="paginator">
-    Page 1 / 1
-</p>
-</section><!-- /#content -->
+
+</section>
 
        </div><!-- /.row -->
     </div><!-- /.container -->
