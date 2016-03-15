@@ -31,7 +31,7 @@ git push -u origin master
 
 
 &lt;p&gt;最后一步如果不成功，比如出现错误如：
-&lt;img alt="image" src="..\images\gitpush出现rejected错误.png" /&gt;
+&lt;img alt="image" src="..\images\gitpush_rejected_error.png" /&gt;
 则使用强制push：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git push -f
 &lt;/pre&gt;&lt;/div&gt;
