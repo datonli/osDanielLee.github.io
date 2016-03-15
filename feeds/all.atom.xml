@@ -4,11 +4,13 @@
 &lt;h2&gt;安装SSH key&lt;/h2&gt;
 &lt;p&gt;要使用Github，必须先在本机上生成SSH key，并且将其添加到自己github账号的SSH Keys上。产生的方法是：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-然后一路回车，结束后还需要将SSH key添加到ssh-agent，方法为：
-ssh-add ~/.ssh/id_rsa
-之后就是需要将id_rsa.pub中的内容添加到github账号的SSH keys上。&lt;/p&gt;
+&lt;p&gt;ssh-keygen -t rsa -b 4096 -C "your_email@example.com"&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;然后一路回车，结束后还需要将SSH key添加到ssh-agent，方法为：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ssh-add ~/.ssh/id_rsa&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;之后就是需要将id_rsa.pub中的内容添加到github账号的SSH keys上。&lt;/p&gt;
 &lt;h2&gt;常用的git指令&lt;/h2&gt;
 &lt;p&gt;通常新建一个repository时，在一台新的电脑上，往往都需要用到的相关指令：&lt;/p&gt;
 &lt;p&gt;在github上new了一个xxx.github.io.git库之后，可以：&lt;/p&gt;
