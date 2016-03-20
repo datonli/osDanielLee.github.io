@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://osdaniellee.github.io/</loc>
-<lastmod>2016-03-20T16:01:44-00:00</lastmod>
+<lastmod>2016-03-20T16:06:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>http://osdaniellee.github.io/archives.html</loc>
-<lastmod>2016-03-20T16:01:44-00:00</lastmod>
+<lastmod>2016-03-20T16:06:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>http://osdaniellee.github.io/tags.html</loc>
-<lastmod>2016-03-20T16:01:44-00:00</lastmod>
+<lastmod>2016-03-20T16:06:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>http://osdaniellee.github.io/categories.html</loc>
-<lastmod>2016-03-20T16:01:44-00:00</lastmod>
+<lastmod>2016-03-20T16:06:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
@@ -123,15 +123,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://osdaniellee.github.io/tag/gitzhi-ling/</loc>
-<lastmod>2016-03-15T19:40:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.8</priority>
-</url>
-
-<url>
-<loc>http://osdaniellee.github.io/tag/ji-hua-da-suan/</loc>
-<lastmod>2016-03-13T16:41:00+08:06</lastmod>
+<loc>http://osdaniellee.github.io/tag/linux/</loc>
+<lastmod>2016-03-12T15:31:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
@@ -151,8 +144,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://osdaniellee.github.io/tag/github/</loc>
-<lastmod>2016-03-15T19:40:00+08:06</lastmod>
+<loc>http://osdaniellee.github.io/tag/file-operation/</loc>
+<lastmod>2016-03-12T15:31:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
@@ -165,15 +158,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://osdaniellee.github.io/tag/file-operation/</loc>
-<lastmod>2016-03-12T15:31:00+08:06</lastmod>
+<loc>http://osdaniellee.github.io/tag/github/</loc>
+<lastmod>2016-03-15T19:40:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>http://osdaniellee.github.io/tag/linux/</loc>
-<lastmod>2016-03-12T15:31:00+08:06</lastmod>
+<loc>http://osdaniellee.github.io/tag/ji-hua-da-suan/</loc>
+<lastmod>2016-03-13T16:41:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>http://osdaniellee.github.io/tag/gitzhi-ling/</loc>
+<lastmod>2016-03-15T19:40:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
