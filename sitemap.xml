@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://osdaniellee.github.io/</loc>
-<lastmod>2016-03-15T21:26:04-00:00</lastmod>
+<lastmod>2016-03-20T11:05:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>http://osdaniellee.github.io/archives.html</loc>
-<lastmod>2016-03-15T21:26:04-00:00</lastmod>
+<lastmod>2016-03-20T11:05:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>http://osdaniellee.github.io/tags.html</loc>
-<lastmod>2016-03-15T21:26:04-00:00</lastmod>
+<lastmod>2016-03-20T11:05:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
 <loc>http://osdaniellee.github.io/categories.html</loc>
-<lastmod>2016-03-15T21:26:04-00:00</lastmod>
+<lastmod>2016-03-20T11:05:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
@@ -36,6 +36,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <lastmod>2016-03-15T16:13:00+08:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.9</priority>
+</url>
+
+<url>
+<loc>http://osdaniellee.github.io/articles/all-pastime-post.html</loc>
+<lastmod>2016-03-20T10:51:00+08:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
 </url>
 
 <url>
@@ -88,6 +95,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://osdaniellee.github.io/category/life/</loc>
+<lastmod>2016-03-20T10:51:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
 <loc>http://osdaniellee.github.io/category/linux/</loc>
 <lastmod>2016-03-12T15:31:00+08:06</lastmod>
 <changefreq>daily</changefreq>
@@ -116,15 +130,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://osdaniellee.github.io/tag/github/</loc>
+<loc>http://osdaniellee.github.io/tag/gitzhi-ling/</loc>
 <lastmod>2016-03-15T19:40:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.8</priority>
-</url>
-
-<url>
-<loc>http://osdaniellee.github.io/tag/ji-hua-da-suan/</loc>
-<lastmod>2016-03-13T16:41:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
@@ -137,22 +144,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://osdaniellee.github.io/tag/bo-ke-jing-yan/</loc>
-<lastmod>2016-03-13T17:38:00+08:06</lastmod>
+<loc>http://osdaniellee.github.io/tag/linux/</loc>
+<lastmod>2016-03-12T15:31:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>http://osdaniellee.github.io/tag/gitzhi-ling/</loc>
-<lastmod>2016-03-15T19:40:00+08:06</lastmod>
+<loc>http://osdaniellee.github.io/tag/ji-hua-da-suan/</loc>
+<lastmod>2016-03-13T16:41:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>http://osdaniellee.github.io/tag/pythonpy2exeke-zhi-xing-wen-jian/</loc>
-<lastmod>2016-03-15T16:00:00+08:06</lastmod>
+<loc>http://osdaniellee.github.io/tag/nu-peng-you/</loc>
+<lastmod>2016-03-20T10:51:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
@@ -165,8 +172,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://osdaniellee.github.io/tag/linux/</loc>
-<lastmod>2016-03-12T15:31:00+08:06</lastmod>
+<loc>http://osdaniellee.github.io/tag/github/</loc>
+<lastmod>2016-03-15T19:40:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>http://osdaniellee.github.io/tag/bo-ke-jing-yan/</loc>
+<lastmod>2016-03-13T17:38:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>http://osdaniellee.github.io/tag/pythonpy2exeke-zhi-xing-wen-jian/</loc>
+<lastmod>2016-03-15T16:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 </url>
