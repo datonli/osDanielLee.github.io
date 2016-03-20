@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
 
-        <title>Tech. - Python，py2exe，可执行文件</title>
+        <title>和女朋友在一起的时间记录</title>
         <meta charset="utf-8" />
         <link href="http://osdaniellee.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Tech. Full Atom Feed" />
+        <link href="http://osdaniellee.github.io/feeds/life.atom.xml" type="application/atom+xml" rel="alternate" title="Tech. Categories Atom Feed" />
 
 
         <!-- Mobile viewport optimized: j.mp/bplateviewport -->
@@ -43,41 +45,49 @@
               </ul>
             </div>
 
-<section id="content">
-
-
+<section id="content" class="body">
 
    <div class="row">
-
-
         <div class="eleven columns">
-                 <ol id="post-list">
-                        <li><article class="hentry">
-                                <header> <h2 class="entry-title"><a href="http://osdaniellee.github.io/articles/python-py2exe-post.html" rel="bookmark" title="Permalink to py2exe编译py3文件方法">py2exe编译py3文件方法</a></h2> </header>
-                                <footer class="post-info">
-                                    <abbr class="published" title="2016-03-15T16:00:00+08:00"> 2016-03-15 16:00 </abbr>
-                                    <address class="vcard author">By 
-                                    <a class="url fn" href="http://osdaniellee.github.io/author/lidatong.html"> lidatong</a>
-                                    </address>
-                                </footer><!-- /.post-info -->
-                                <div class="entry-content"> <p>使用py2exe编译py文件成为可执行文件(.exe)是常用的方法，py2exe同样支持python3。</p> </div><!-- /.entry-content -->
-
-                                <div class="medium primary btn"><a href="http://osdaniellee.github.io/articles/python-py2exe-post.html" rel="bookmark" title="Permalink to py2exe编译py3文件方法">Read more <i class="icon-arrow-right"></i></a></div>
 
 
+            <header>
+              <h2 class="entry-title">
+                <a href="http://osdaniellee.github.io/articles/all-pastime-post.html" rel="bookmark"
+                   title="Permalink to 和女朋友在一起的时间记录">和女朋友在一起的时间记录</a></h2>
+           
+            </header>
+            <footer class="post-info">
+              <abbr class="published" title="2016-03-20T10:51:00+08:00">
+                2016-03-20 10:51
+              </abbr>
+              <address class="vcard author">By 
+                <a class="url fn" href="http://osdaniellee.github.io/author/lidatong.html"> lidatong</a>
+              </address>
+            </footer><!-- /.post-info -->
+            <div class="entry-content">
+              <h2>和女朋友在一起的时间</h2>
+                <p>开始时间：<span id="start">2013-12-01 00:00:00</span></p>
+                <p>现在时间：<span id="now">2013-12-01 00:00:00</span></p>
+                <p>至今一共：<span id="total">800</span></p>
+                
+            </div><!-- /.entry-content -->
+            <div class="comments">
+              <h3>Comments</h3>
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                var disqus_identifier = "articles/all-pastime-post.html";
+                (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'https://osdaniellee.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+              </script>
+            </div>
 
-                                <div class="row tag-row">
-                                        <span>Tagged as : </span>
-                                            <a class="danger label" href="http://osdaniellee.github.io/tag/pythonpy2exeke-zhi-xing-wen-jian/">Python，py2exe，可执行文件</a>
-                                </div>
-
-
-
-                        </article></li>
-                </ol><!-- /#posts-list -->
 
         </div><!-- /.eleven.columns -->
-        
+
 <div class="three columns">
 
 <h4>Pages</h4>
@@ -89,6 +99,7 @@
 <h4>Categories</h4>
 <ul class="blank">
 		<li><a href="http://osdaniellee.github.io/category/git/">Git</a></li>
+		<li><a href="http://osdaniellee.github.io/category/life/">Life</a></li>
 		<li><a href="http://osdaniellee.github.io/category/linux/">Linux</a></li>
 		<li><a href="http://osdaniellee.github.io/category/piece/">Piece</a></li>
 		<li><a href="http://osdaniellee.github.io/category/plan/">Plan</a></li>
@@ -110,10 +121,8 @@
 
 </div> </div><!-- /.row -->
 
-<p class="paginator">
-    Page 1 / 1
-</p>
-</section><!-- /#content -->
+
+</section>
 
        </div><!-- /.row -->
     </div><!-- /.container -->
@@ -159,6 +168,28 @@
         s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
+    var options = { timeZone: "Asia/Shanghai" };
+    var start = new Date(2013, 11, 1, 0, 0, 0)
+    document.getElementById("start").innerHTML = start.toLocaleString('chinese', options);
+    var startDate = start.getDate();
+    var startHour = start.getHours();
+    var startMin = start.getMinutes();
+    var startSec = start.getSeconds();
+    function clockChange()
+    {
+        var today = new Date(); 
+        document.getElementById("now").innerHTML = today.toLocaleString('chinese', options);
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMin = today.getMinutes();
+        var todaySec = today.getSeconds();
+        document.getElementById("total").innerHTML = parseInt((today.getTime()-start.getTime())/(1000*60*60*24)) + " 天 " + (todayHour - startHour) 
+        + " 时 " + (todayMin - startMin) + " 分 " + (todaySec - startSec) + " 秒 ";
+        setTimeout(function() {
+            clockChange();
+        },1000);
+    }
+    clockChange();
 </script>
   <script src="http://osdaniellee.github.io/theme/js/libs/jquery-1.9.1.min.js"></script>
   <script src="http://osdaniellee.github.io/theme/js/libs/gumby.min.js"></script>
