@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech.</title><link href="http://osdaniellee.github.io/" rel="alternate"></link><link href="http://osdaniellee.github.io/feeds/all.atom.xml" rel="self"></link><id>http://osdaniellee.github.io/</id><updated>2016-03-15T19:40:00+08:00</updated><entry><title>如何用git开始github之旅</title><link href="http://osdaniellee.github.io/articles/git-github-order-post.html" rel="alternate"></link><updated>2016-03-15T19:40:00+08:00</updated><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-15:articles/git-github-order-post.html</id><summary type="html">&lt;h2&gt;下载并安装git，注册github账号&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech.</title><link href="http://osdaniellee.github.io/" rel="alternate"></link><link href="http://osdaniellee.github.io/feeds/all.atom.xml" rel="self"></link><id>http://osdaniellee.github.io/</id><updated>2016-03-15T19:40:00+08:00</updated><entry><title>如何用git开始github之旅</title><link href="http://osdaniellee.github.io/articles/git-github-order-post.html" rel="alternate"></link><published>2016-03-15T19:40:00+08:00</published><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-15:articles/git-github-order-post.html</id><summary type="html">&lt;h2&gt;下载并安装git，注册github账号&lt;/h2&gt;
 &lt;p&gt;下载安装注册都很容易，如果在安装git时不知道如何选，一路默认也是可以的。&lt;/p&gt;
 &lt;h2&gt;安装SSH key&lt;/h2&gt;
 &lt;p&gt;要使用Github，必须先在本机上生成SSH key，并且将其添加到自己github账号的SSH Keys上。产生的方法是：&lt;/p&gt;
@@ -39,7 +39,7 @@ git push -u origin master
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;一般都能够成功。&lt;/p&gt;</summary><category term="Github"></category><category term="git，指令"></category></entry><entry><title>py2exe编译py3文件方法</title><link href="http://osdaniellee.github.io/articles/python-py2exe-post.html" rel="alternate"></link><updated>2016-03-15T16:00:00+08:00</updated><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-15:articles/python-py2exe-post.html</id><summary type="html">&lt;h2&gt;使用py2exe编译py3文件&lt;/h2&gt;
+&lt;p&gt;一般都能够成功。&lt;/p&gt;</summary><category term="Github"></category><category term="git，指令"></category></entry><entry><title>py2exe编译py3文件方法</title><link href="http://osdaniellee.github.io/articles/python-py2exe-post.html" rel="alternate"></link><published>2016-03-15T16:00:00+08:00</published><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-15:articles/python-py2exe-post.html</id><summary type="html">&lt;h2&gt;使用py2exe编译py3文件&lt;/h2&gt;
 &lt;p&gt;首先下载&lt;a href="https://pypi.python.org/pypi/py2exe"&gt;py2exe&lt;/a&gt;，注意要找到
 对应的版本，有对应py2的，有对应py3的。&lt;/p&gt;
 &lt;p&gt;在要编译的xx.py文件同目录下新建setup2exe.py，内容为：&lt;/p&gt;
@@ -74,7 +74,7 @@ git push -u origin master
 &lt;blockquote&gt;
 &lt;p&gt;python setup2exe.py
 即可。&lt;/p&gt;
-&lt;/blockquote&gt;</summary><category term="Python，py2exe，可执行文件"></category></entry><entry><title>python读取二进制字节流的方法</title><link href="http://osdaniellee.github.io/articles/python-read-binary-bytes-post.html" rel="alternate"></link><updated>2016-03-15T15:40:00+08:00</updated><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-15:articles/python-read-binary-bytes-post.html</id><summary type="html">&lt;h2&gt;使用python读取二进制字节流文件的方法&lt;/h2&gt;
+&lt;/blockquote&gt;</summary><category term="Python，py2exe，可执行文件"></category></entry><entry><title>python读取二进制字节流的方法</title><link href="http://osdaniellee.github.io/articles/python-read-binary-bytes-post.html" rel="alternate"></link><published>2016-03-15T15:40:00+08:00</published><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-15:articles/python-read-binary-bytes-post.html</id><summary type="html">&lt;h2&gt;使用python读取二进制字节流文件的方法&lt;/h2&gt;
 &lt;p&gt;使用C的fwrite直接将char[]的内容写到txt文件中是一种很常见
 的写文件方式（尤其是在下位机等较为底层的应用场景），而我们
 往往使用python读取文件更多的是考虑读取文件中的内容为字符形式
@@ -96,7 +96,7 @@ for i in range(5):
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;此为记录~&lt;/p&gt;</summary><category term="二进制字节，Python，文件读取，fwrite"></category></entry><entry><title>建博客的经验</title><link href="http://osdaniellee.github.io/articles/built-blog-post.html" rel="alternate"></link><updated>2016-03-13T17:38:00+08:00</updated><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-13:articles/built-blog-post.html</id><summary type="html">&lt;h2&gt;建设博客的选择&lt;/h2&gt;
+&lt;p&gt;此为记录~&lt;/p&gt;</summary><category term="二进制字节，Python，文件读取，fwrite"></category></entry><entry><title>建博客的经验</title><link href="http://osdaniellee.github.io/articles/built-blog-post.html" rel="alternate"></link><published>2016-03-13T17:38:00+08:00</published><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-13:articles/built-blog-post.html</id><summary type="html">&lt;h2&gt;建设博客的选择&lt;/h2&gt;
 &lt;p&gt;建设一个博客有非常多的选择，比如说在开源中国（osChina）开设一个账号
 就能够拥有一个博客，比如在CSDN也有非常多的技术博客和人流量，
 非常简单；另外，能够自己建设个网站，原本我想做的就是这么一件事——自己
@@ -407,7 +407,7 @@ make: *** [html] Error 1
 &lt;/blockquote&gt;
 &lt;p&gt;并在域名解析网站添加CNAME记录，说明www.lidatong.work这个域名指向xxx.github.io即可。&lt;/p&gt;
 &lt;p&gt;至此，使用markdown就可以愉快的写博客啦~&lt;/p&gt;
-&lt;p&gt;具体参考我的&lt;a href="https://github.com/osDanielLee/MyBlog"&gt;github&lt;/a&gt;。&lt;/p&gt;</summary><category term="博客，经验"></category></entry><entry><title>博客宗旨和计划</title><link href="http://osdaniellee.github.io/articles/plan-post.html" rel="alternate"></link><updated>2016-03-13T16:41:00+08:00</updated><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-13:articles/plan-post.html</id><summary type="html">&lt;h2&gt;博客宗旨&lt;/h2&gt;
+&lt;p&gt;具体参考我的&lt;a href="https://github.com/osDanielLee/MyBlog"&gt;github&lt;/a&gt;。&lt;/p&gt;</summary><category term="博客，经验"></category></entry><entry><title>博客宗旨和计划</title><link href="http://osdaniellee.github.io/articles/plan-post.html" rel="alternate"></link><published>2016-03-13T16:41:00+08:00</published><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-13:articles/plan-post.html</id><summary type="html">&lt;h2&gt;博客宗旨&lt;/h2&gt;
 &lt;p&gt;建设博客是因为在很多方面都遇到各种各样的问题，虽然都能够得以解决，
 却很快就会随着时间而遗忘。以往大都是使用类似与“有道云笔记”的工具
 进行记录和思考，并且在很多时候“有道云笔记”还承载着收集各种材料、
@@ -457,7 +457,7 @@ make: *** [html] Error 1
 &lt;li&gt;使用Golang实现分布式存储和计算框架，以及机器学习算法；&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;努力之~&lt;/p&gt;</summary><category term="计划，打算"></category></entry><entry><title>Linux文件操作总结</title><link href="http://osdaniellee.github.io/articles/linux-post.html" rel="alternate"></link><updated>2016-03-12T15:31:00+08:00</updated><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-12:articles/linux-post.html</id><summary type="html">&lt;h1&gt;linux文件操作总结&lt;/h1&gt;
+&lt;p&gt;努力之~&lt;/p&gt;</summary><category term="计划，打算"></category></entry><entry><title>Linux文件操作总结</title><link href="http://osdaniellee.github.io/articles/linux-post.html" rel="alternate"></link><published>2016-03-12T15:31:00+08:00</published><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-12:articles/linux-post.html</id><summary type="html">&lt;h1&gt;linux文件操作总结&lt;/h1&gt;
 &lt;p&gt;linux的文件操作非常常用，但是又容易忘记。&lt;/p&gt;
 &lt;p&gt;以C操作为例：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
