@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech.</title><link href="http://osdaniellee.github.io/" rel="alternate"></link><link href="http://osdaniellee.github.io/feeds/all.atom.xml" rel="self"></link><id>http://osdaniellee.github.io/</id><updated>2016-03-15T19:40:00+08:00</updated><entry><title>如何用git开始github之旅</title><link href="http://osdaniellee.github.io/articles/git-github-order-post.html" rel="alternate"></link><published>2016-03-15T19:40:00+08:00</published><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-15:articles/git-github-order-post.html</id><summary type="html">&lt;h2&gt;下载并安装git，注册github账号&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech.</title><link href="http://osdaniellee.github.io/" rel="alternate"></link><link href="http://osdaniellee.github.io/feeds/all.atom.xml" rel="self"></link><id>http://osdaniellee.github.io/</id><updated>2016-06-25T18:02:00+08:00</updated><entry><title>从广州到北京</title><link href="http://osdaniellee.github.io/articles/gz-bj-life-post.html" rel="alternate"></link><published>2016-06-25T18:02:00+08:00</published><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-06-25:articles/gz-bj-life-post.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;今天，终于在mac上搭建好了blog系统&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;广州&lt;/h2&gt;
+&lt;p&gt;离开广州已经两个月了，其实在自己眼里也就一个离开而已。&lt;/p&gt;
+&lt;h2&gt;北京&lt;/h2&gt;
+&lt;p&gt;北京的生活，不好也不坏。&lt;/p&gt;
+&lt;p&gt;其实，我就是想测试一下这个mac上的pelican能用了没。。。不过还是给自己一些祝福吧，希望越来越好！&lt;/p&gt;</summary><category term="广州，北京"></category></entry><entry><title>如何用git开始github之旅</title><link href="http://osdaniellee.github.io/articles/git-github-order-post.html" rel="alternate"></link><published>2016-03-15T19:40:00+08:00</published><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-03-15:articles/git-github-order-post.html</id><summary type="html">&lt;h2&gt;下载并安装git，注册github账号&lt;/h2&gt;
 &lt;p&gt;下载安装注册都很容易，如果在安装git时不知道如何选，一路默认也是可以的。&lt;/p&gt;
 &lt;h2&gt;安装SSH key&lt;/h2&gt;
 &lt;p&gt;要使用Github，必须先在本机上生成SSH key，并且将其添加到自己github账号的SSH Keys上。产生的方法是：&lt;/p&gt;
