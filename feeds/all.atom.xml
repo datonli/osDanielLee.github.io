@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech.</title><link href="http://osdaniellee.github.io/" rel="alternate"></link><link href="http://osdaniellee.github.io/feeds/all.atom.xml" rel="self"></link><id>http://osdaniellee.github.io/</id><updated>2016-06-25T18:02:00+08:00</updated><entry><title>从广州到北京</title><link href="http://osdaniellee.github.io/articles/gz-bj-life-post.html" rel="alternate"></link><published>2016-06-25T18:02:00+08:00</published><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-06-25:articles/gz-bj-life-post.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;今天，终于在mac上搭建好了blog系统&lt;/strong&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Tech.</title><link href="http://osdaniellee.github.io/" rel="alternate"></link><link href="http://osdaniellee.github.io/feeds/all.atom.xml" rel="self"></link><id>http://osdaniellee.github.io/</id><updated>2016-07-01T00:06:00+08:00</updated><entry><title>20160701一些想法和打算</title><link href="http://osdaniellee.github.io/articles/plan0701-post.html" rel="alternate"></link><published>2016-07-01T00:06:00+08:00</published><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-07-01:articles/plan0701-post.html</id><summary type="html">&lt;h3&gt;关于工作&lt;/h3&gt;
+&lt;p&gt;工作方面现在已经开始慢慢上手。&lt;/p&gt;
+&lt;p&gt;目前做的主要有两个项目：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;1. 安全项目
+IDS，IPS，中控系统。
+2. 网站后台平台——中控系统的接口
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;其中第1个项目是主要的项目，负责工作是从底层收包，到包处理，统计，接收策略的统计，
+最后是将告警传输给中控系统，下发给IPS做过滤。&lt;/p&gt;
+&lt;p&gt;第2个项目是改改中控接口，和web后台做对接。&lt;/p&gt;
+&lt;h3&gt;一些想法&lt;/h3&gt;
+&lt;p&gt;工作上的事情自然是要完成的。但是由于自己更感兴趣的是利用这些统计数据做更多的事情，
+所以肯定不满足于此。&lt;/p&gt;
+&lt;p&gt;入手点：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;1.时间序列对流量的预测
+2.深度学习的方法学习异常流量
+3.根据流量信息分地域挖掘，根据不同情况分类，看看有没有有用信息
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;打算&lt;/h3&gt;
+&lt;p&gt;三个方面：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;1.尽快完成手头工作
+2.每天自己学习两个小时数据挖掘／机器学习知识（主要方式：书籍，包括PRML，
+机器学习方法，时间序列论文等，也包括一些实际操作的视频，如bittiger上的题目讲解视频）
+3.找同事要数据读取和处理权限，每周花一定时间研究如何挖掘／应用
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;以上计划从7月1日开始，9月1日结束，为期两个月。
+希望达到的效果有：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;1.工作不耽误
+2.对数据挖掘／机器学习的常用算法，数学推导熟悉（PRML至少一遍，机器学习概论所有推导
+都能够自己推导出来）
+3.至少使用时间序列的方法分析流量异常的情况是否可预测，深层次的是实用深度学习
+神经网络的方法处理异常数据，看能够构建神经网络模型识别，可考虑使用谷歌开源平台
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="计划，打算"></category></entry><entry><title>从广州到北京</title><link href="http://osdaniellee.github.io/articles/gz-bj-life-post.html" rel="alternate"></link><published>2016-06-25T18:02:00+08:00</published><author><name>lidatong</name></author><id>tag:osdaniellee.github.io,2016-06-25:articles/gz-bj-life-post.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;今天，终于在mac上搭建好了blog系统&lt;/strong&gt;&lt;/p&gt;
 &lt;h2&gt;广州&lt;/h2&gt;
 &lt;p&gt;离开广州已经两个月了，其实在自己眼里也就一个离开而已。&lt;/p&gt;
 &lt;h2&gt;北京&lt;/h2&gt;
